@@ -62,6 +62,9 @@ header{
 	max-width:100%;
 	justify-content: space-between; 
 	align-items:center;
+	margin-top:1rem;
+	margin-bottom:1rem;
+
 	 
 	
 	
@@ -75,23 +78,29 @@ header nav a{
 	text-decoration: none;
 	margin: auto;
 	
+	
 
 	border:1px solid black;
 
 }
 
- .img1{
+ .gather{
 background:url(https://images.unsplash.com/photo-1606863234151-1cc9eef8c958?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat;
 display:flex;
 justify-content: center;
 align-items:center;
 flex-direction:column;
-
-
+border:1px solid black;
+width:80%;
+margin-left: auto;
+margin-right: auto;
+padding:10rem;
+background-position: center;
 }
 
 h3{
 	font-size:40px;
+	text-align:center;
 }
 
 section a{
@@ -102,21 +111,29 @@ section a{
 	
 }
 
-.images {
+#images {
 display:flex;
 justify-content:center;
 align-items: center;
 flex-wrap:wrap;
-padding-top:10%
+padding-top:10%;
+justify-content: space-evenly;
+text-align:center;
+align-content: space-evenly;
 
 
-}
 
-
-
-footer {
+footer{
 	display:flex;
-	flex-direction:column;
 	justify-content:center;
-	align-items: baseline;
+	text-align:center;
+	flex-direction:column;
+	}
+
+.foo { 
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	flex-direction:column;
+
 }
