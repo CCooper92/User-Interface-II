@@ -49,26 +49,36 @@ table {
 
 /
 
+
+
 *{
 	border:1px solid black;
 	box-sizing:border-box;
 	padding:0;
 	margin:0;
 	font-size:62.5%;
+	
 }
 
+
+body{
+	background-color:black;
+}
 header{
 	display:flex;
 	max-width:100%;
+	height:20vh;
 	justify-content: space-between; 
 	align-items:center;
 	margin-top:1rem;
 	margin-bottom:1rem;
+	background-color: #dab08a;
+	
 }
 
 h1{
 	font-size:3rem;
-	font-family: 'Lucida Sans';
+	font-family:courier new;
 	margin-left:1rem;
 }
 .nav{
@@ -76,9 +86,10 @@ h1{
 	margin-right:1rem;
 	
 	
-}
+	}
 .nav a{
 	font-size:1rem;
+	font-family:courier new;
 	text-decoration: none;
 	padding:1rem 1rem;
 	border:1px solid black;
@@ -105,6 +116,10 @@ background-position:bottom;
 h3{
 	font-size:40px;
 	text-align:center;
+	font-family:courier new;
+}
+.gather a{
+	font-family:courier new;
 }
 
 section a{
@@ -124,19 +139,21 @@ flex-wrap:wrap;
 margin-left:auto;
 margin-right:auto;
 padding:2% 5%;
-background-color: aquamarine;
+background-color:black;
 }
 
 .images p{
 	text-align:center;
+	font-family:courier new;
 	padding:2% 0 5% 0;
-	background-color:yellow;
+	background-color:#dab08a;
 }
 
 footer{
 	width:100%;
 	height:20vh;
 	border:1px solid black;
+	background-color: #dab08a;
 }
 
 footer nav{
@@ -151,12 +168,15 @@ footer nav{
 		padding:0.5rem 0.5rem 0.5rem 0.5rem;
 		border-radius:0.5rem;
 		color:black;
+		font-family:courier new;
 		text-decoration: none;
-
-	}
+		border:2px dotted black;
+		border-radius: 0.5rem;
+}
 
 #socials{
 	color:black;
+	font-family:courier new;
 	margin-top:1rem;
 	text-decoration:none;
 	}
