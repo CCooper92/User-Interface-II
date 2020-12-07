@@ -63,6 +63,8 @@ table {
 
 body{
 	background-color:black;
+	max-width:100%;
+	
 }
 header{
 	display:flex;
@@ -70,9 +72,10 @@ header{
 	height:20vh;
 	justify-content: space-between; 
 	align-items:center;
-	margin-top:1rem;
+	margin-top:;
 	margin-bottom:1rem;
 	background-color: #dab08a;
+	border:2px solid white;
 	
 }
 
@@ -97,6 +100,9 @@ h1{
 	color:black;
 
 }
+.nav a:hover{
+	background-color:white;
+}
 
  .gather{
 background:url(https://i.picsum.photos/id/544/800/800.jpg?hmac=Lx7-EECtDfsuz9J3WhA_XZK21a_4UYVoIv38eh5JvFc) no-repeat;
@@ -111,6 +117,7 @@ margin-left: auto;
 margin-right: auto;
 background-size:100%;
 background-position:bottom;
+border:2px solid white;
 }
 
 h3{
@@ -131,22 +138,35 @@ section a{
 
 .images {
 display:flex;
-width:60%;
+/*width:60%;*/
 justify-content:space-evenly;
 align-items: center;
-
 flex-wrap:wrap;
 margin-left:auto;
 margin-right:auto;
 padding:2% 5%;
 background-color:black;
+width:90%;
 }
+ .images div{ 
+	 width:45%;
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: center;
+	 
+	
 
+ }
+ .images div img{
+	 width:100%;
+ }
 .images p{
 	text-align:center;
 	font-family:courier new;
 	padding:2% 0 5% 0;
 	background-color:#dab08a;
+	width:100%;
+	
 }
 
 footer{
@@ -154,6 +174,7 @@ footer{
 	height:20vh;
 	border:1px solid black;
 	background-color: #dab08a;
+	background:2px solid white;
 }
 
 footer nav{
@@ -162,6 +183,7 @@ footer nav{
 	align-items:center;
 	font-size:2rem;
 	padding-top:2rem;
+
 }
 
 	footer nav a{
@@ -174,6 +196,10 @@ footer nav{
 		border-radius: 0.5rem;
 }
 
+footer nav a:hover{
+	background-color: white;
+}
+
 #socials{
 	color:black;
 	font-family:courier new;
@@ -181,7 +207,66 @@ footer nav{
 	text-decoration:none;
 	}
 
+	/*media Queries tablet view*/
+
+	@media (max-width:800px){
+		header{
+			height:35vh;
+			flex-direction: column;
+			padding-bottom:3%;
+			padding-top: 3%;
+		}
+	
+		
+		.images {
+			width:80%;
+		}
+		footer{
+			height:50vh;
+		}
+
+	}
 
 
+	/*media queries phone view*/
 
+	@media (max-width:500px){
+
+		header {
+			height:35vh;
+
+		}
+		
+		.nav{
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			margin-right:10%;
+			
+			
+		}
+		.nav a{
+			padding:15% 30%;
+			width:100%;
+			border-radius: 0rem;
+			}
+		.gather{
+			
+			margin-bottom: 5%;
+			width:90%;
+		}
+		.images div{
+			flex-wrap: wrap;
+			width:45%;
+			/*justify-content: center;*/
+			padding:
+			}
+
+		footer{
+			height:25vh;
+			margin-top: 1rem;
+		}
+			
+			
+	}
 
